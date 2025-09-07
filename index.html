@@ -170,19 +170,17 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="relative pt-[120px] md:pt-[140px] pb-16 bg-gradient-to-b from-green-50 to-white">
+<!-- HERO (single instance, card-style) -->
+<section id="home" class="relative pt-[120px] md:pt-[140px] pb-16 bg-gradient-to-b from-green-50 to-white">
   <div class="container mx-auto px-6">
-    <!-- Hero banner card (single instance) -->
     <div class="mx-auto max-w-6xl">
       <div class="rounded-[32px] overflow-hidden shadow-[0_24px_60px_rgba(0,0,0,0.12)] bg-white">
         <img src="https://i.postimg.cc/c1KN9cdV/Vee-Vee-Slide-Regional.png" alt="VeeVee Hero Banner" class="w-full h-[48vh] md:h-[64vh] object-cover" fetchpriority="high" decoding="async" />
       </div>
     </div>
 
-    <!-- CTAs under the banner -->
     <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-      <button onclick="document.getElementById('why').scrollIntoView({ behavior: 'smooth' })" class="bg-primary text-white px-8 py-4 rounded-full font-semibold hover:bg-primary/90 transition-all duration-300 flex items-center justify-center">
+      <button @click="scrollToWhy()" class="bg-primary text-white px-8 py-4 rounded-full font-semibold hover:bg-primary/90 transition-all duration-300 flex items-center justify-center">
         <i class="fas fa-info-circle mr-2"></i>
         เรียนรู้เพิ่มเติม
       </button>
@@ -196,7 +194,6 @@
       </a>
     </div>
 
-    <!-- Stats -->
     <div class="flex items-center justify-center gap-12 pt-10 text-secondary">
       <div class="text-center">
         <div class="text-3xl font-bold">24</div>
@@ -213,6 +210,10 @@
     </div>
   </div>
 </section>
+
+
+  <!-- Hero Section -->
+  
 
   <!-- Why VeeVee Section -->
   <section id="why" class="section-padding bg-gradient-to-br from-green-50 to-white">
